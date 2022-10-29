@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type='text/css' href='src/style/style.css'>
+  <link rel="stylesheet" type="text/css" href="src/style/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Валидация</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form__body">
+      <form id="form">
+        <div class="form-item">
+          <label for="name" class="form__label">Имя*</label>
+          <input id="name" type="text" name="name" class="form__input _name _req">
+        </div>
+        <div class="form-item">
+          <label for="first-name" class="form__label">Фамилия*</label>
+          <input id="first-name" type="text" name="first-name" class="form__input _first-name _req">
+        </div>
+        <div class="form-item">
+          <label for="email" class="form__label">Email*</label>
+          <input id="email" type="email" name="email" class="form__input _email _req">
+        </div>
+        <div class="form-item">
+          <label for="password" class="form__label">Пароль*</label>
+          <input id="password" type="password" name="password" class="form__input _password _req">
+        </div>
+        <div class="form-item">
+          <label for="repeatPassword" class="form__label">Подтверждение пароля*</label>
+          <input id="repeatPassword" type="password" name="confirmation" class="form__input _repeatPassword _req">
+        </div>
+        <div class="checkbox">
+          <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+          <label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="https://vk.com/justice_it">Условиями</a>*</span></label>
+        </div>
+        <div class="form-item">
+          <button class="form__button">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="src/script.js"></script>
+</body>
+</html>
